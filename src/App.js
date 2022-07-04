@@ -6,18 +6,18 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./Global";
 
 const theme = {
-  colors:{
-    orange: '#ff695f',
-    blue: '03a4ed',
-    dark: "#2a2a2a",
-    white: "#fff"
-  },
-}
+	colors: {
+		orange: "#ff695f",
+		blue: "03a4ed",
+		dark: "#2a2a2a",
+		white: "#fff",
+	},
+};
 
 function App() {
 	return (
 		<ThemeProvider theme={theme}>
-    <GlobalStyle />
+			<GlobalStyle />
 			<Router>
 				<Navbar />
 				<Routes>
