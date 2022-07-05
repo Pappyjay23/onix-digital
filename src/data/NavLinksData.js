@@ -5,22 +5,22 @@ export const NavLinksData = [
     },
     {
         name: 'Services',
-        path: '#',
+        path: '#services',
     },
     {
         name: 'About',
-        path: '#',
+        path: '#about',
     },
     {
         name: 'Portfolio',
-        path: '#',
+        path: '#portfolio',
     },
     {
         name: 'Videos',
-        path: '#',
+        path: '#videos',
     },
     {
         name: 'Contact Us',
-        path: '#',
+        path: '#contact',
     },
 ]

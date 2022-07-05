@@ -1,16 +1,22 @@
 import styled from "styled-components";
 
 export const NavContainer = styled.div`
-	background-color: ${({theme}) => theme.colors.lightGrey};
+	background-color: ${({ theme, fixed }) =>
+		!fixed ? theme.colors.lightGrey : theme.colors.white};
 	color: #fff;
-	padding: 1.5rem 20px;
+	padding: ${({ fixed }) => (fixed ? "1rem 20px" : "1.5rem 20px")};
+	z-index: 99;
+	width: 100%;
+	position: ${({ fixed }) => (fixed ? "fixed" : null)};
+	box-shadow: ${({ fixed }) =>
+		fixed ? "0px 0px 10px rgba(0,0,0,0.15)" : null};
 
 	@media screen and (min-width: 768px) {
-		padding: 1.5rem 30px;
+		padding: ${({ fixed }) => (fixed ? "1rem 30px" : "1.5rem 30px")};
 	}
 
 	@media screen and (min-width: 1024px) {
-		padding: 1.5rem 50px;
+		padding: ${({ fixed }) => (fixed ? "1rem 50px" : "1.5rem 50px")};
 	}
 `;
 export const NavItems = styled.div`
@@ -24,6 +30,7 @@ export const NavItems = styled.div`
 		margin: 0 auto;
 	}
 `;
+export const LogoLink = styled.a``;
 export const Logo = styled.img``;
 export const MenuBar = styled.div`
 	cursor: pointer;
@@ -35,16 +42,16 @@ export const MenuBar = styled.div`
 	}
 `;
 export const MenuItems = styled.div`
-	position: absolute;
+	position: fixed;
 	/* top: 0; */
 	top: ${({ top }) => top};
 	opacity: ${({ opacity }) => opacity};
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
 	padding: 1.5rem 20px;
 	background-color: ${({ theme }) => theme.colors.orange};
 	transition: all 0.3s ease-in-out;
+	z-index: 99;
 `;
 export const BarContainer = styled.div`
 	display: flex;

@@ -1,0 +1,32 @@
+export const HomeContentData = [
+    {
+        heading: 'Video Tutorials',
+        spanOne: 'Get the',
+        spanTwo: 'best ideas',
+        spanThree: 'for',
+        spanFour: 'your website',
+        desc: 'Various designers are active here and always post ideas useful for building beautiful websites.',
+        btnName: 'Our Services',
+        callLine: '010-020-0340',
+    },
+    // {
+    //     heading: 'Video Tutorials',
+    //     spanOne: 'Get the',
+    //     spanTwo: 'best ideas',
+    //     spanThree: 'for',
+    //     spanFour: 'your website',
+    //     desc: 'Various designers are active here and always post ideas useful for building beautiful websites.',
+    //     btnName: 'Our Services',
+    //     callLine: '010-020-0340',
+    // },
+    // {
+    //     heading: 'Video Tutorials',
+    //     spanOne: 'Get the',
+    //     spanTwo: 'best ideas',
+    //     spanThree: 'for',
+    //     spanFour: 'your website',
+    //     desc: 'Various designers are active here and always post ideas useful for building beautiful websites.',
+    //     btnName: 'Our Services',
+    //     callLine: '010-020-0340',
+    // },
+]

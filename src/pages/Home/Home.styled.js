@@ -5,13 +5,19 @@ export const HomeCover = styled.div`
 	position: relative;
 	background-image: url(${HomeBg});
 	background-repeat: no-repeat;
+	@media (min-width: 768px) {
+		height: 100vh;
+	}
+	@media (min-width: 2560px) {
+		height: 60vh;
+	}
 `;
 
 export const HomeContainer = styled.div`
 	display: flex;
 	position: relative;
 	padding: 8rem 15px;
-	height: 100vh;
+	height: 100%;
 
 	@media screen and (min-width: 768px) {
 		padding: 1.5rem 30px;
@@ -23,9 +29,26 @@ export const HomeContainer = styled.div`
 		margin: 0 auto;
 	}
 `;
-export const HomeContent = styled.div`
+
+export const HomeContentGroup = styled.div`
+	display: flex;
+`;
+
+export const HomeContentContainer = styled.div`
+	/* padding-left: -100%;
+	animation: marquee 5s linear infinite;
+
+	@keyframes marquee {
+		0% {
+			transform: translate(0, 0);
+		}
+		100% {
+			transform: translate(-100%, 0);
+		}
+	} */
 	@media (min-width: 1024px) {
 		width: 40%;
+		height: fit-content;
 	}
 	@media (min-width: 2560px) {
 		width: 50%;
@@ -98,6 +121,7 @@ export const HeroImage = styled.img`
 	right: 0;
 	top: 0px;
 	height: 500px;
+	z-index: -1;
 
 	@media (min-width: 1440px) {
 		height: 600px;

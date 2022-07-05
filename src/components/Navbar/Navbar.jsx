@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
 	BarContainer,
 	Logo,
+	LogoLink,
 	MenuBar,
 	MenuButton,
 	MenuItems,
@@ -19,14 +20,25 @@ import { Button } from "../Button/Button.styled";
 
 const Navbar = () => {
 	const [navItems, setNavItems] = useState(false);
+	const [fixed, setFixed] = useState(false);
+
+  const toggleFixed = () => {
+		const scrolled = document.documentElement.scrollTop;
+		if (scrolled > 300) {
+			setFixed(true);
+		} else if (scrolled <= 300) {
+			setFixed(false);
+		}
+	};
+	window.addEventListener("scroll", toggleFixed);
 
 	return (
 		<>
-			<NavContainer>
+			<NavContainer fixed={fixed}>
 				<NavItems>
-					<a href='#'>
+					<LogoLink href='#'>
 						<Logo src={LogoImg} />
-					</a>
+					</LogoLink>
 					<MenuBar
 						color='#2a2a2a'
 						size='1.5rem'
