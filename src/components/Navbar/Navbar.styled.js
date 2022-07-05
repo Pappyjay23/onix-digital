@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavContainer = styled.div`
-	background-color: transparent;
+	background-color: ${({theme}) => theme.colors.lightGrey};
 	color: #fff;
 	padding: 1.5rem 20px;
 

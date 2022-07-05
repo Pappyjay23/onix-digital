@@ -1,26 +1,26 @@
 export const NavLinksData = [
     {
         name: 'Home',
-        path: '/',
+        path: '#',
     },
     {
         name: 'Services',
-        path: '/',
+        path: '#',
     },
     {
         name: 'About',
-        path: '/',
+        path: '#',
     },
     {
         name: 'Portfolio',
-        path: '/',
+        path: '#',
     },
     {
         name: 'Videos',
-        path: '/',
+        path: '#',
     },
     {
         name: 'Contact Us',
-        path: '/',
+        path: '#',
     },
 ]

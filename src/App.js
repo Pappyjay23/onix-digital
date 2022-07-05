@@ -8,9 +8,10 @@ import { GlobalStyle } from "./Global";
 const theme = {
 	colors: {
 		orange: "#ff695f",
-		blue: "03a4ed",
+		blue: "#03a4ed",
 		dark: "#2a2a2a",
 		white: "#fff",
+    lightGrey: '#fafafa'
 	},
 };
 

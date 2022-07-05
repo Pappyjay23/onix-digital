@@ -24,7 +24,7 @@ const Navbar = () => {
 		<>
 			<NavContainer>
 				<NavItems>
-					<a href='/'>
+					<a href='#'>
 						<Logo src={LogoImg} />
 					</a>
 					<MenuBar
@@ -38,7 +38,7 @@ const Navbar = () => {
 							<MenuLink href={data.path}>{data.name}</MenuLink>
 						))}
 						<MenuButton>
-							<Button href='/' bg='#ff695f' color='#fff'>
+							<Button href='#' bg='#ff695f' color='#fff' btnSmall>
 								Contact Us Now
 							</Button>
 						</MenuButton>
@@ -56,7 +56,7 @@ const Navbar = () => {
 				</BarContainer>
 				<NavLinks>
 					{NavLinksData.map((data, index) => (
-						<NavLink key={index} href={data.path}>
+						<NavLink key={index} onClick={() => setNavItems(false)} href={data.path}>
 							{data.name}
 						</NavLink>
 					))}
