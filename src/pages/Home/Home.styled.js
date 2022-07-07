@@ -17,9 +17,8 @@ export const HomeContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	padding: 8rem 15px;
+	padding: 8rem 20px;
 	height: 100%;
-	overflow-x: hidden;
 
 	@media screen and (min-width: 768px) {
 		padding: 1.5rem 30px;
@@ -40,8 +39,21 @@ export const HomeContentCover = styled.div`
 	opacity: ${({ active }) => (active ? 1 : 0)};
 	transition: all 2s ease;
 	transform: translateX(${({ active }) => (active ? 0 : "30px")});
-	height: 400px;
+	height: 550px;
 	/* transform: scale(${({ active }) => (active ? 1.04 : 1)}); */
+	
+	@media (min-width: 425px) {
+		height: 470px;
+		
+	}
+	@media (min-width: 768px) {
+		height: 350px;
+		
+	}
+	@media (min-width: 1024px) {
+		height: 420px;
+		
+	}
 `;
 
 export const HomeContentContainer = styled.div`
@@ -128,8 +140,9 @@ export const HeroImage = styled.img`
 `;
 
 export const HomeLinks = styled.div`
-	margin-top: 2rem;
+	margin-top: 1rem;
 	display: flex;
+	padding: 0 20px;
 `;
 export const HomeLink = styled.p`
 	text-decoration: none;
