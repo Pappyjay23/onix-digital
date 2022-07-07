@@ -7,6 +7,8 @@ import {
 	HomeContentCover,
 	HomeContentGroup,
 	HomeCover,
+	HomeLink,
+	HomeLinks,
 } from "./Home.styled";
 import Hero from "../../assets/images/banner-right-image.png";
 import HomeContent from "./HomeContent";
@@ -40,6 +42,22 @@ const Home = () => {
 						</HomeContentCover>
 					))}
 				</HomeContentGroup>
+				<HomeLinks>
+					{slides.map((slide, index) => {
+						{/* const changeSlide = () =>{
+							setCurrent(index)
+							setCurrent(current === slides.length - 1 ? 0 : current + 1);
+						} */}
+						return (
+							<HomeLink
+								key={index}
+								// onClick={changeSlide}
+								active={current === index ? true : false}>
+								{index + 1}
+							</HomeLink>
+						);
+					})}
+				</HomeLinks>
 			</HomeContainer>
 			<HeroImageContainer>
 				<HeroImage src={Hero} />

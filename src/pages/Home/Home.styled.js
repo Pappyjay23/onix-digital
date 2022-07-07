@@ -15,6 +15,7 @@ export const HomeCover = styled.div`
 
 export const HomeContainer = styled.div`
 	display: flex;
+	flex-direction: column;
 	position: relative;
 	padding: 8rem 15px;
 	height: 100%;
@@ -38,14 +39,15 @@ export const HomeContentGroup = styled.div`
 export const HomeContentCover = styled.div`
 	opacity: ${({ active }) => (active ? 1 : 0)};
 	transition: all 2s ease;
-	transform: translateX(${({ active }) => (active ? 0 : '30px')});
+	transform: translateX(${({ active }) => (active ? 0 : "30px")});
+	height: 400px;
 	/* transform: scale(${({ active }) => (active ? 1.04 : 1)}); */
 `;
 
 export const HomeContentContainer = styled.div`
 	@media (min-width: 1024px) {
 		width: 450px;
-		height: fit-content;
+		height: 100%;
 	}
 `;
 export const HomeHeading = styled.p`
@@ -123,4 +125,18 @@ export const HeroImage = styled.img`
 	@media (min-width: 2560px) {
 		height: 800px;
 	}
+`;
+
+export const HomeLinks = styled.div`
+	margin-top: 2rem;
+	display: flex;
+`;
+export const HomeLink = styled.p`
+	text-decoration: none;
+	margin-right: 1.3rem;
+	font-size: 1.4rem;
+	color: ${({ active, theme }) =>
+		active ? theme.colors.orange : theme.colors.dark};
+	border-bottom: 3px solid
+		${({ active, theme }) => (active ? theme.colors.orange : "transparent")};
 `;
