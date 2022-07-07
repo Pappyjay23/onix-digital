@@ -18,6 +18,7 @@ export const HomeContainer = styled.div`
 	position: relative;
 	padding: 8rem 15px;
 	height: 100%;
+	overflow-x: hidden;
 
 	@media screen and (min-width: 768px) {
 		padding: 1.5rem 30px;
@@ -34,24 +35,17 @@ export const HomeContentGroup = styled.div`
 	display: flex;
 `;
 
-export const HomeContentContainer = styled.div`
-	/* padding-left: -100%;
-	animation: marquee 5s linear infinite;
+export const HomeContentCover = styled.div`
+	opacity: ${({ active }) => (active ? 1 : 0)};
+	transition: all 2s ease;
+	transform: translateX(${({ active }) => (active ? 0 : '30px')});
+	/* transform: scale(${({ active }) => (active ? 1.04 : 1)}); */
+`;
 
-	@keyframes marquee {
-		0% {
-			transform: translate(0, 0);
-		}
-		100% {
-			transform: translate(-100%, 0);
-		}
-	} */
+export const HomeContentContainer = styled.div`
 	@media (min-width: 1024px) {
-		width: 40%;
+		width: 450px;
 		height: fit-content;
-	}
-	@media (min-width: 2560px) {
-		width: 50%;
 	}
 `;
 export const HomeHeading = styled.p`

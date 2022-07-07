@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
 	HeroImage,
 	HeroImageContainer,
 	HomeContainer,
 	HomeContentContainer,
+	HomeContentCover,
 	HomeContentGroup,
 	HomeCover,
 } from "./Home.styled";
@@ -12,14 +13,33 @@ import HomeContent from "./HomeContent";
 import { HomeContentData } from "../../data/HomeContentData";
 
 const Home = () => {
+	const slides = HomeContentData;
+	const [current, setCurrent] = useState(0);
+	useEffect(() => {
+		const nextSlide = () => {
+			setCurrent(current === slides.length - 1 ? 0 : current + 1);
+		};
+		setTimeout(() => {
+			nextSlide();
+		}, 5000);
+	}, [current, slides]);
+
 	return (
 		<HomeCover>
 			<HomeContainer>
 				<HomeContentGroup>
 					{HomeContentData.map((data, index) => (
-						<HomeContentContainer key={index}>
-							<HomeContent data={data} />
-						</HomeContentContainer>
+						<HomeContentCover
+							// className={index === current ? "slide active" : "slide"}
+							active={current === index ? true : false}
+							key={index}>
+							{current === index && (
+								<HomeContentContainer
+								>
+									<HomeContent data={data} />
+								</HomeContentContainer>
+							)}
+						</HomeContentCover>
 					))}
 				</HomeContentGroup>
 			</HomeContainer>
