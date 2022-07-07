@@ -89,7 +89,7 @@ export const HomeLine = styled.div`
 	}
 `;
 export const CallIcon = styled.div`
-	background-color: ${({ theme }) => theme.colors.orange};
+	background: ${({ theme }) => theme.colors.orangeGrad};
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
