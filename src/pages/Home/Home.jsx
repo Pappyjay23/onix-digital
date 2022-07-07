@@ -30,12 +30,10 @@ const Home = () => {
 				<HomeContentGroup>
 					{HomeContentData.map((data, index) => (
 						<HomeContentCover
-							// className={index === current ? "slide active" : "slide"}
 							active={current === index ? true : false}
 							key={index}>
 							{current === index && (
-								<HomeContentContainer
-								>
+								<HomeContentContainer>
 									<HomeContent data={data} />
 								</HomeContentContainer>
 							)}

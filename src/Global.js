@@ -8,15 +8,4 @@ export const GlobalStyle = createGlobalStyle`
         font-family: 'Montserrat','Poppins', sans-serif;
         scroll-behavior: smooth;
     }
-    .slide {
-        opacity: 0;
-        transition-duration: 2s ease;
-    }
-
-    .slide.active{
-        opacity: 1;
-        transition-duration: 2s;
-        transform: scale(1.04);
-        ${'' /* transform: translateX(-30px); */}
-    }
 `;
