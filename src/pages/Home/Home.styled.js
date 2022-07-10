@@ -78,7 +78,7 @@ export const TitleSpan = styled.span`
 `;
 export const HomeDesc = styled.p`
 	color: ${({ theme }) => theme.colors.dark};
-	font-weight: 100;
+	font-weight: 300;
 	margin-bottom: 2rem;
 	line-height: 1.7;
 	font-size: 90%;
