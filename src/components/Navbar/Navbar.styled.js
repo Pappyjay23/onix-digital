@@ -10,6 +10,7 @@ export const NavContainer = styled.div`
 	position: ${({ fixed }) => (fixed ? "fixed" : null)};
 	box-shadow: ${({ fixed }) =>
 		fixed ? "0px 0px 10px rgba(0,0,0,0.15)" : null};
+	transition: all .5s ease;
 
 	@media screen and (min-width: 768px) {
 		padding: ${({ fixed }) => (fixed ? "1rem 30px" : "1.5rem 30px")};
@@ -83,6 +84,7 @@ export const MenuLink = styled.a`
 	text-decoration: none;
 	color: ${({ theme }) => theme.colors.dark};
 	font-size: 90%;
+	font-weight: 500;
 	margin: 0 0.75rem;
 	:hover {
 		color: ${({ theme }) => theme.colors.orange};
