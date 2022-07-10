@@ -46,8 +46,8 @@ const Navbar = () => {
 						<FaBars />
 					</MenuBar>
 					<MenuLinks>
-						{NavLinksData.map((data) => (
-							<MenuLink href={data.path}>{data.name}</MenuLink>
+						{NavLinksData.map((data, index) => (
+							<MenuLink key={index} href={data.path}>{data.name}</MenuLink>
 						))}
 						<MenuButton>
 							<Button href='#' bg='#ff695f' color='#fff' btnSmall>
