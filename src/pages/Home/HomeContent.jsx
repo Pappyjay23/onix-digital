@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhone } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { Button } from "../../components/Button/Button.styled";
 import {
 	CallIcon,
@@ -29,7 +29,7 @@ const HomeContent = ({ data }) => {
 				</Button>
 				<HomeLine>
 					<CallIcon>
-						<FaPhone />
+						<FaPhoneAlt />
 					</CallIcon>
 					<HomeLineText>{data.callLine}</HomeLineText>
 				</HomeLine>
