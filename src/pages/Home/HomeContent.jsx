@@ -24,7 +24,7 @@ const HomeContent = ({ data }) => {
 			</HomeTitle>
 			<HomeDesc>{data.desc}</HomeDesc>
 			<HomeContactGroup>
-				<Button color='#fff' bg='#03a4ed'>
+				<Button href={data.path} color='#fff' bg='#03a4ed'>
 					{data.btnName}
 				</Button>
 				<HomeLine>

@@ -8,6 +8,7 @@ export const HomeContentData = [
         desc: 'We provide you with the best and latest web design and development trends.',
         btnName: 'Message us Now',
         callLine: '010-020-0340',
+        path: '#contact',
     },
     {
         heading: 'Online Marketing',
@@ -18,6 +19,7 @@ export const HomeContentData = [
         desc: 'Various designers are active here and always post ideas useful for building beautiful websites.',
         btnName: 'Our Services',
         callLine: '090-080-0670',
+        path: '#services',
     },
     {
         heading: 'Video Tutorials',
@@ -28,5 +30,6 @@ export const HomeContentData = [
         desc: 'There are several videos you can watch to get ideas for your project.',
         btnName: 'Watch Videos',
         callLine: '050-040-0320',
+        path: '#videos',
     },
 ]
