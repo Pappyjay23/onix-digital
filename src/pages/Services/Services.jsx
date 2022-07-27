@@ -34,7 +34,7 @@ const Services = () => {
 			<ServicesCardContainer>
 			<CardContainer>
 				{ServiceCardData.map((data, index) => (
-					<ServicesCard>
+					<ServicesCard key={index}>
 						<ServicesCardTitle>
 							{data.title}
 						</ServicesCardTitle>
