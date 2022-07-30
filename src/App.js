@@ -1,9 +1,9 @@
 import React from "react";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import { Home, Services } from "./pages";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./Global";
+import About from "./pages/About/About";
 
 const theme = {
 	colors: {
@@ -21,14 +21,10 @@ function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
-			{/* <Router> */}
 				<Navbar />
 				<Home />
 				<Services />
-				{/* <Routes>
-					<Route />
-				</Routes>
-			</Router> */}
+				<About />
 		</ThemeProvider>
 	);
 }
