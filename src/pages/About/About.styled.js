@@ -21,7 +21,7 @@ export const AboutFlexContainer = styled.div`
 `;
 export const AboutImageContainer = styled.div`
    @media screen and (min-width: 1024px) {   
-        width: 50%;
+        width: 40%;
     }
 `;
 export const AboutImage = styled.img`
@@ -30,7 +30,8 @@ export const AboutImage = styled.img`
 `;
 export const AboutContentContainer = styled.div`
     @media screen and (min-width: 1024px) {
-        width: 50%;   
+        width: 55%; 
+        margin-left: auto;
     }
 `;
 
@@ -41,13 +42,20 @@ export const AboutSectionDesc = styled.p`
 `
 
 export const AboutCardContainer = styled.div`
-    margin: 3rem 0;
+    margin: 1rem 0;
+    @media screen and (min-width:1024px) {
+        display: flex;
+    }
 `
 export const AboutCard = styled.div`
     text-align: center;
     margin: 3rem 0;
+    @media screen and (min-width:1024px) {
+        margin-right: .5rem;
+        margin: 1rem 0;
+    }
 `
-export const AboutCardIcon = styled.div``
+export const AboutCardIcon = styled.img``
 export const AboutCardAmount = styled.p`
     font-size: 3rem;
     font-weight: 700;
@@ -59,7 +67,10 @@ export const AboutCardTitle = styled.p`
 `
 export const AboutCardDesc = styled.p`
     font-size: 95%;
-    border-top: 1px solid #dedede;
+    border-top: 1px solid #e0e0e0;
     padding-top: 1rem;
-    line-height: 1.7;
+    line-height: 1.8;
+    @media screen and (min-width:1024px) {
+        font-size: 85%;
+    }
 `

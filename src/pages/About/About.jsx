@@ -36,7 +36,7 @@ const About = () => {
 					<AboutCardContainer>
 						{AboutData.cards.map((card, index) => (
 							<AboutCard key={index}>
-								<AboutCardIcon></AboutCardIcon>
+								<AboutCardIcon src={card.icon} />
 								<AboutCardAmount>{card.amount}</AboutCardAmount>
 								<AboutCardTitle>{card.title}</AboutCardTitle>
 								<AboutCardDesc>{card.desc}</AboutCardDesc>
