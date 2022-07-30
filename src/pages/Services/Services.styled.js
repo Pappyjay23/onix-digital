@@ -14,7 +14,7 @@ export const ServicesContainer = styled.div`
 	}
 `;
 export const HeadingContainer = styled.div`
-	margin-bottom: 5rem;
+	margin-bottom: 3rem;
 `;
 
 export const ServicesLeftBg = styled.img`
@@ -45,6 +45,7 @@ export const CardContainer = styled.div`
 export const ServicesCard = styled.div`
 	background-color: ${({ theme }) => theme.colors.lightGrey};
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+	border: 1px solid ${({theme}) => theme.colors.orange};
 	width: 270px;
 	height: 300px;
 	margin-right: 2rem;
@@ -55,6 +56,22 @@ export const ServicesCard = styled.div`
 	align-items: center;
 	justify-content: center;
 	text-align: center;
+
+	:last-child{
+		margin-right: 0;
+	}
+	@media screen and (min-width: 375px) {
+		width: 320px;
+	}
+	@media screen and (min-width: 425px) {
+		width: 370px;
+	}
+	@media screen and (min-width: 768px) {
+		width: 320px;
+	}
+	@media screen and (min-width: 1024px) {
+		width: 270px;
+	}
 `;
 export const ServicesCardTitle = styled.p`
 	font-size: 1.2rem;
