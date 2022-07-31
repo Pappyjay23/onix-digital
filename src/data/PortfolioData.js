@@ -24,4 +24,44 @@ export const PortfolioData = [
 		title: "Project Four",
 		desc: "SEO & Marketing",
 	},
+	{
+		image: ImageOne,
+		title: "Project Five",
+		desc: "SEO & Marketing",
+	},
+	{
+		image: ImageTwo,
+		title: "Project Six",
+		desc: "SEO & Marketing",
+	},
+	{
+		image: ImageThree,
+		title: "Project Seven",
+		desc: "SEO & Marketing",
+	},
+	{
+		image: ImageFour,
+		title: "Project Eight",
+		desc: "SEO & Marketing",
+	},
+	{
+		image: ImageOne,
+		title: "Project Nine",
+		desc: "SEO & Marketing",
+	},
+	{
+		image: ImageTwo,
+		title: "Project Ten",
+		desc: "SEO & Marketing",
+	},
+	{
+		image: ImageThree,
+		title: "Project Eleven",
+		desc: "SEO & Marketing",
+	},
+	{
+		image: ImageFour,
+		title: "Project Twelve",
+		desc: "SEO & Marketing",
+	},
 ];
