@@ -32,21 +32,17 @@ const Services = () => {
 				/>
 			</HeadingContainer>
 			<ServicesCardContainer>
-			<CardContainer>
-				{ServiceCardData.map((data, index) => (
-					<ServicesCard key={index}>
-						<ServicesCardTitle>
-							{data.title}
-						</ServicesCardTitle>
-						<ServicesCardIcon>
-							<FaDatabase />
-						</ServicesCardIcon>
-						<ServicesCardDesc>
-							{data.desc}
-						</ServicesCardDesc>
-					</ServicesCard>
-				))}
-			</CardContainer>
+				<CardContainer>
+					{ServiceCardData.map((data, index) => (
+						<ServicesCard key={index}>
+							<ServicesCardTitle>{data.title}</ServicesCardTitle>
+							<ServicesCardIcon>
+								<FaDatabase />
+							</ServicesCardIcon>
+							<ServicesCardDesc>{data.desc}</ServicesCardDesc>
+						</ServicesCard>
+					))}
+				</CardContainer>
 			</ServicesCardContainer>
 		</ServicesContainer>
 	);

@@ -19,7 +19,7 @@ import { AboutData } from "../../data/AboutData";
 
 const About = () => {
 	return (
-		<AboutContainer>
+		<AboutContainer id="about">
 			<AboutFlexContainer>
 				<AboutImageContainer>
 					<AboutImage src={AboutImg} />

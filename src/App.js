@@ -4,6 +4,7 @@ import { Home, Services } from "./pages";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./Global";
 import About from "./pages/About/About";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 const theme = {
 	colors: {
@@ -25,6 +26,7 @@ function App() {
 				<Home />
 				<Services />
 				<About />
+				<Portfolio />
 		</ThemeProvider>
 	);
 }

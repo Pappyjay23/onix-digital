@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AboutContainer = styled.div`
-	padding: 5rem 15px;
+	padding: 3rem 15px;
 	position: relative;
 	@media screen and (min-width: 768px) {
 		padding: 1.5rem 30px;
@@ -51,8 +51,8 @@ export const AboutCard = styled.div`
     text-align: center;
     margin: 3rem 0;
     @media screen and (min-width:1024px) {
-        margin-right: .5rem;
         margin: 1rem 0;
+        margin-right: .7rem;
     }
 `
 export const AboutCardIcon = styled.img``
