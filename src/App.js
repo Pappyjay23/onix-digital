@@ -1,10 +1,8 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import { Home, Services } from "./pages";
+import { About, Home, Portfolio, Services } from "./pages";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./Global";
-import About from "./pages/About/About";
-import Portfolio from "./pages/Portfolio/Portfolio";
 
 const theme = {
 	colors: {
