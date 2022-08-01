@@ -38,7 +38,7 @@ export const PortfolioCard = styled.div`
 	padding: 2rem;
 	border-radius: 15px;
 	position: relative;
-	transition: all 0.3s ease;
+	cursor: pointer;
 
 	:last-child {
 		margin-right: 0;
@@ -75,6 +75,12 @@ export const PortfolioSubCard = styled.div`
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-end;
+	opacity: 0;
+	transition: all .5s ease;
+
+	${PortfolioCard}:hover &{
+		opacity: 1;
+	}
 `;
 export const PSubCardContent = styled.div`
 	padding: 1rem 0;

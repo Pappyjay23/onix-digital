@@ -12,27 +12,27 @@ export const PortfolioData = [
 	{
 		image: ImageTwo,
 		title: "Project Two",
-		desc: "SEO & Marketing",
+		desc: "Ui/Ux Design & Dev",
 	},
 	{
 		image: ImageThree,
 		title: "Project Three",
-		desc: "SEO & Marketing",
+		desc: "Digital Marketing",
 	},
 	{
 		image: ImageFour,
 		title: "Project Four",
-		desc: "SEO & Marketing",
+		desc: "Content Creation",
 	},
 	{
 		image: ImageOne,
 		title: "Project Five",
-		desc: "SEO & Marketing",
+		desc: "Business Strategy",
 	},
 	{
 		image: ImageTwo,
 		title: "Project Six",
-		desc: "SEO & Marketing",
+		desc: "Web Optimization",
 	},
 	{
 		image: ImageThree,
@@ -42,26 +42,26 @@ export const PortfolioData = [
 	{
 		image: ImageFour,
 		title: "Project Eight",
-		desc: "SEO & Marketing",
+		desc: "Ui/Ux Design & Dev",
 	},
 	{
 		image: ImageOne,
 		title: "Project Nine",
-		desc: "SEO & Marketing",
+		desc: "Digital Marketing",
 	},
 	{
 		image: ImageTwo,
 		title: "Project Ten",
-		desc: "SEO & Marketing",
+		desc: "Content Creation",
 	},
 	{
 		image: ImageThree,
 		title: "Project Eleven",
-		desc: "SEO & Marketing",
+		desc: "Business Strategy",
 	},
 	{
 		image: ImageFour,
 		title: "Project Twelve",
-		desc: "SEO & Marketing",
+		desc: "Web Optimization",
 	},
 ];
