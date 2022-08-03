@@ -3,7 +3,7 @@ import BgOne from "../../assets/images/first-plan-bg.png";
 
 export const PlansContainer = styled.div`
 	position: relative;
-    overflow-x: hidden;
+    /* overflow: hidden; */
 `;
 
 export const PlansContent = styled.div`
@@ -26,9 +26,6 @@ export const PlansImageOne = styled.img`
 	z-index: -1;
 	width: 400px;
 	height: auto;
-	/* @media screen and (max-width: 320px) {
-		width: 200px;
-	} */
 `;
 
 export const PlansImageTwo = styled.img`
@@ -43,6 +40,10 @@ export const PlansCardContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+    }
 `;
 export const PlansCard = styled.div`
 	background: url(${BgOne});
@@ -55,6 +56,15 @@ export const PlansCard = styled.div`
 	flex-direction: column;
 	align-items: center;
     margin-bottom: 2rem;
+
+    @media (min-width: 1024px) {
+        margin-right: 2rem;
+        margin-bottom: 0;
+
+        :last-child{
+            margin-right: 0;
+        }
+    }
 `;
 export const PlansTitle = styled.p`
 	font-weight: 700;
