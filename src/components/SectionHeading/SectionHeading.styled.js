@@ -15,7 +15,7 @@ export const SectionSubTitle = styled.h3`
     text-transform: uppercase;
     text-align: center;
     font-size: 1.9rem;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     color: ${({theme}) => theme.colors.orange};
     opacity: .2;
     width: 100%;

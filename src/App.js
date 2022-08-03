@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import { About, Home, Portfolio, Services } from "./pages";
+import { About, Home, Plans, Portfolio, Services } from "./pages";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./Global";
 
@@ -25,6 +25,7 @@ function App() {
 				<Services />
 				<About />
 				<Portfolio />
+				<Plans />
 		</ThemeProvider>
 	);
 }
