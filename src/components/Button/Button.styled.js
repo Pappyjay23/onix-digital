@@ -7,4 +7,5 @@ export const Button = styled.a`
 	background-color: ${({ bg }) => bg};
 	border-radius: 25px;
 	font-size: 90%;
+	cursor: pointer;
 `;

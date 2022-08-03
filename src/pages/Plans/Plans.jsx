@@ -1,22 +1,23 @@
 import React from "react";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import {
-    PContentDesc,
-    PlanCardContents,
-    PlanMiniSale,
-    PlanSale,
-    PlansCard,
+	PContentDesc,
+	PlanCardContents,
+	PlanMiniSale,
+	PlanSale,
+	PlansCard,
 	PlansCardContainer,
 	PlansContainer,
 	PlansContent,
 	PlansImageOne,
 	PlansImageTwo,
-    PlansTitle,
-    SalesContainer,
+	PlansTitle,
+	SalesContainer,
 } from "./Plans.styled";
 import ImageOne from "../../assets/images/tables-left-dec.png";
 import ImageTwo from "../../assets/images/tables-right-dec.png";
 import { Button } from "../../components/Button/Button.styled";
+import { PlansCardData } from "../../data/PlansCardData";
 
 const Plans = () => {
 	return (
@@ -32,17 +33,23 @@ const Plans = () => {
 					subTitle='Our plans'
 				/>
 				<PlansCardContainer>
-					<PlansCard>
-						<PlansTitle></PlansTitle>
-						<SalesContainer>
-							<PlanMiniSale></PlanMiniSale>
-							<PlanSale></PlanSale>
-						</SalesContainer>
-                        <PlanCardContents>
-                            <PContentDesc></PContentDesc>
-                        </PlanCardContents>
-                        <Button color="#fff" btnSmall bg='#03a4ed'>Yooo</Button>
-					</PlansCard>
+					{PlansCardData.map((data, item) => (
+						<PlansCard key={item}>
+							<PlansTitle>{data.title}</PlansTitle>
+							<SalesContainer>
+								<PlanMiniSale>{data.miniSale}</PlanMiniSale>
+								<PlanSale>{data.sale}</PlanSale>
+							</SalesContainer>
+							<PlanCardContents>
+								{data.cardContent.map((content, index) =>(
+                                    <PContentDesc key={index}>{content}</PContentDesc>
+                                ))}
+							</PlanCardContents>
+							<Button color='#fff' btnSmall bg='#03a4ed'>
+								{data.btnContent}
+							</Button>
+						</PlansCard>
+					))}
 				</PlansCardContainer>
 			</PlansContent>
 		</PlansContainer>

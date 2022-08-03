@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import BgOne from "../../assets/images/first-plan-bg.png";
 
 export const PlansContainer = styled.div`
 	position: relative;
+    overflow-x: hidden;
 `;
 
 export const PlansContent = styled.div`
@@ -21,24 +23,67 @@ export const PlansImageOne = styled.img`
 	position: absolute;
 	left: 0;
 	top: 5rem;
-	width: 300px;
+	z-index: -1;
+	width: 400px;
 	height: auto;
-    @media screen and (max-width: 320px) {
-        width: 200px;
-    }
+	/* @media screen and (max-width: 320px) {
+		width: 200px;
+	} */
 `;
 
 export const PlansImageTwo = styled.img`
 	position: absolute;
 	right: 0;
 	top: 5rem;
+	z-index: -1;
 `;
 
-export const PlansCardContainer = styled.div``
-export const PlansCard = styled.div``
-export const PlansTitle = styled.p``
-export const SalesContainer = styled.div``
-export const PlanMiniSale = styled.p``
-export const PlanSale = styled.p``
-export const PlanCardContents = styled.div``
-export const PContentDesc = styled.p``
+export const PlansCardContainer = styled.div`
+	margin: 3rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
+export const PlansCard = styled.div`
+	background: url(${BgOne});
+	background-size: cover;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+	padding: 3rem 0;
+	border-radius: 40px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    margin-bottom: 2rem;
+`;
+export const PlansTitle = styled.p`
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin-bottom: 1rem;
+`;
+export const SalesContainer = styled.div`
+	margin-bottom: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: ${({ theme }) => theme.colors.orange};
+`;
+export const PlanMiniSale = styled.p`
+	text-decoration: line-through;
+	margin-bottom: 0.5rem;
+`;
+export const PlanSale = styled.p`
+	font-size: 2.8rem;
+	font-weight: 700;
+`;
+export const PlanCardContents = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 90%;
+    margin-bottom: 2rem;
+`;
+export const PContentDesc = styled.p`
+    margin: .5rem 0;
+    color: #7a7a7a;
+`;

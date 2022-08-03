@@ -41,18 +41,15 @@ export const HomeContentCover = styled.div`
 	transform: translateX(${({ active }) => (active ? 0 : "30px")});
 	height: 550px;
 	/* transform: scale(${({ active }) => (active ? 1.04 : 1)}); */
-	
+
 	@media (min-width: 425px) {
 		height: 470px;
-		
 	}
 	@media (min-width: 768px) {
 		height: 350px;
-		
 	}
 	@media (min-width: 1024px) {
 		height: 420px;
-		
 	}
 `;
 
@@ -143,6 +140,10 @@ export const HomeLinks = styled.div`
 	margin-top: 1rem;
 	display: flex;
 	padding: 0 20px;
+
+	@media screen and (max-width: 319px) {
+		margin-top: 7rem;
+	}
 `;
 export const HomeLink = styled.p`
 	text-decoration: none;
