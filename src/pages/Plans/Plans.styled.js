@@ -3,7 +3,7 @@ import BgOne from "../../assets/images/first-plan-bg.png";
 
 export const PlansContainer = styled.div`
 	position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 `;
 
 export const PlansContent = styled.div`

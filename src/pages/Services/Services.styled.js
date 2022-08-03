@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ServicesContainer = styled.div`
 	padding: 5rem 15px;
 	position: relative;
-	overflow-x: hidden;
+	overflow: hidden;
 	@media screen and (min-width: 768px) {
 		padding: 1.5rem 30px;
 	}
@@ -34,7 +34,7 @@ export const ServicesCardContainer = styled.div`
 	display: flex;
 	width: 95%;
 	margin: 0 auto;
-	height: 320px;
+	/* height: 320px; */
 	overflow-x: scroll;
 	&::-webkit-scrollbar{
 		display: none;
