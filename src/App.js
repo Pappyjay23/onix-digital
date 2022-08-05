@@ -1,6 +1,14 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-import { About, Home, MailSub, Plans, Portfolio, Services } from "./pages";
+import {
+	About,
+	Home,
+	MailSub,
+	Plans,
+	Portfolio,
+	Project,
+	Services,
+} from "./pages";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./Global";
 
@@ -20,13 +28,14 @@ function App() {
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
-				<Navbar />
-				<Home />
-				<Services />
-				<About />
-				<Portfolio />
-				<Plans />
-				<MailSub />
+			<Navbar />
+			<Home />
+			<Services />
+			<About />
+			<Portfolio />
+			<Plans />
+			<MailSub />
+			<Project />
 		</ThemeProvider>
 	);
 }
