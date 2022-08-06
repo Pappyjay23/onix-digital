@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
+export const ProjectSection = styled.div`
+	position: relative;
+`;
 export const ProjectContainer = styled.div`
 	padding: 5rem 15px;
-	position: relative;
 	@media screen and (min-width: 768px) {
 		padding: 1.5rem 30px;
 	}
@@ -13,6 +15,18 @@ export const ProjectContainer = styled.div`
 		margin: 0 auto;
 	}
 `;
+
+export const LeftBg = styled.img`
+	position: absolute;
+	top: 0;
+	left: 0;
+`;
+export const RightBg = styled.img`
+	position: absolute;
+	top: 0;
+	right: 0;
+`;
+
 export const ProjectVideosCover = styled.div`
 	display: flex;
 	flex-direction: column;
