@@ -17,6 +17,9 @@ export const ProjectContainer = styled.div`
 export const ProjectVideosCover = styled.div`
 	display: flex;
 	flex-direction: column;
+	@media(min-width:1024px){
+		flex-direction: row;
+	}
 `;
 export const VideoCard = styled.div`
 	height: 500px;
@@ -24,6 +27,11 @@ export const VideoCard = styled.div`
 	background-color: #ddd;
 	border-radius: 20px;
 	margin-bottom: 4rem;
+	@media (min-width:1024px) {
+		margin-bottom: 0;
+		width: 60%;
+		height: 600px;
+	}
 `;
 
 export const VideoTag = styled.div`
@@ -44,7 +52,18 @@ export const VidTitle = styled.p`
 export const VidDesc = styled.p`
 	font-size: 90%;
 `;
-export const ProjectIdCards = styled.div``;
+export const ProjectIdCards = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	@media (min-width: 768px){
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	@media (min-width: 1024px){
+		width: 40%;
+	}
+`;
 export const ProjectIdCard = styled.div`
 	background-image: url(${Image});
 	background-position: center;
@@ -53,6 +72,17 @@ export const ProjectIdCard = styled.div`
 	height: 100px;
 	border-radius: 20px;
 	position: relative;
+	margin-bottom: 1.5rem;
+	
+	@media (min-width: 350px){
+		width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	@media (min-width: 768px){
+		width: 300px;
+	}
 `;
 export const ProjectIdTag = styled.div`
 	background: ${({ theme }) => theme.colors.orangeGrad};
