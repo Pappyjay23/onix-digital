@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { ProjectData } from "../../data/ProjectsData";
 import {
 	IdTagTitle,
 	ProjectContainer,
@@ -9,30 +10,49 @@ import {
 	ProjectVideosCover,
 	VidDesc,
 	VideoCard,
+	VideoCardContainer,
+	VideoCardCover,
 	VideoTag,
 	VidTitle,
 } from "./Project.styled";
 
 const Project = () => {
+	const [current, setCurrent] = useState(0);
+
 	return (
-		<ProjectContainer>
+		<ProjectContainer id="videos">
 			<ProjectVideosCover>
-				<VideoCard>
-					<VideoTag>
-						<VidTitle>Project One</VidTitle>
-						<VidDesc>SEO & Marketing</VidDesc>
-					</VideoTag>
-				</VideoCard>
+				<VideoCardContainer>
+					{ProjectData.map((vid, index) => (
+						<VideoCardCover
+							active={current == index ? true : false}
+							key={index}>
+							{current === index && (
+								<VideoCard cardImg={vid.image}>
+									<VideoTag>
+										<VidTitle>{vid.title}</VidTitle>
+										<VidDesc>{vid.desc}</VidDesc>
+									</VideoTag>
+								</VideoCard>
+							)}
+						</VideoCardCover>
+					))}
+				</VideoCardContainer>
 				<ProjectIdCards>
-					<ProjectIdCard>
-						<ProjectIdTag>
-							<IdTagTitle>Project One</IdTagTitle>
-						</ProjectIdTag>
-						<ProjectIdOverlay>
-							<VidTitle>Project One</VidTitle>
-							<VidDesc>SEO & Marketing</VidDesc>
-						</ProjectIdOverlay>
-					</ProjectIdCard>
+					{ProjectData.map((data, index) => (
+						<ProjectIdCard
+							key={index}
+							onClick={() => setCurrent(index)}
+							smallImg={data.imgSmall}>
+							<ProjectIdTag>
+								<IdTagTitle>{data.title}</IdTagTitle>
+							</ProjectIdTag>
+							<ProjectIdOverlay active={current == index ? true : false}>
+								<VidTitle>{data.title}</VidTitle>
+								<VidDesc>{data.desc}</VidDesc>
+							</ProjectIdOverlay>
+						</ProjectIdCard>
+					))}
 				</ProjectIdCards>
 			</ProjectVideosCover>
 		</ProjectContainer>

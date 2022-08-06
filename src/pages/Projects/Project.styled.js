@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Image from "../../assets/images/video-thumb-01.png";
 
 export const ProjectContainer = styled.div`
 	padding: 5rem 15px;
@@ -17,19 +16,37 @@ export const ProjectContainer = styled.div`
 export const ProjectVideosCover = styled.div`
 	display: flex;
 	flex-direction: column;
-	@media(min-width:1024px){
+	@media (min-width: 1024px) {
 		flex-direction: row;
 	}
 `;
+export const VideoCardContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+
+	@media (min-width: 1024px) {
+		width: 60%;
+	}
+`;
+
+export const VideoCardCover = styled.div`
+	opacity: ${({ active }) => (active ? 1 : 0)};
+	transition: all 1s ease;
+	transform: translateX(${({ active }) => (active ? 0 : "30px")});
+`;
+
 export const VideoCard = styled.div`
+	background-image: url(${({ cardImg }) => cardImg});
+	background-position: center;
+	background-size: cover;
 	height: 500px;
 	width: 100%;
 	background-color: #ddd;
 	border-radius: 20px;
 	margin-bottom: 4rem;
-	@media (min-width:1024px) {
+	@media (min-width: 1024px) {
 		margin-bottom: 0;
-		width: 60%;
 		height: 600px;
 	}
 `;
@@ -42,6 +59,10 @@ export const VideoTag = styled.div`
 	width: 175px;
 	text-align: center;
 	color: ${({ theme }) => theme.colors.white};
+
+	@media (min-width: 768px) {
+		width: 250px;
+	}
 `;
 
 export const VidTitle = styled.p`
@@ -56,16 +77,17 @@ export const ProjectIdCards = styled.div`
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	@media (min-width: 768px){
+	@media (min-width: 768px) {
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-	@media (min-width: 1024px){
-		width: 40%;
+	@media (min-width: 1024px) {
+		width: 35%;
+		margin-left: auto;
 	}
 `;
 export const ProjectIdCard = styled.div`
-	background-image: url(${Image});
+	background-image: url(${({ smallImg }) => smallImg});
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -73,14 +95,14 @@ export const ProjectIdCard = styled.div`
 	border-radius: 20px;
 	position: relative;
 	margin-bottom: 1.5rem;
-	
-	@media (min-width: 350px){
+
+	@media (min-width: 350px) {
 		width: 300px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	@media (min-width: 768px){
+	@media (min-width: 768px) {
 		width: 300px;
 	}
 `;
@@ -109,6 +131,7 @@ export const ProjectIdOverlay = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	color: ${({theme}) => theme.colors.white};
-	opacity: 0;
+	color: ${({ theme }) => theme.colors.white};
+	opacity: ${({ active }) => (active ? 1 : 0)};
+	transition: all 0.5s ease;
 `;
