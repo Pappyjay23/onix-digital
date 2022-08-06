@@ -5,5 +5,6 @@ import Portfolio from "./Portfolio/Portfolio";
 import Plans from "./Plans/Plans";
 import MailSub from "./MailSub/MailSub";
 import Project from "./Projects/Project";
+import Contact from "./Contact/Contact";
 
-export { Home, Services, About, Portfolio, Plans, MailSub, Project };
+export { Home, Services, About, Portfolio, Plans, MailSub, Project, Contact };

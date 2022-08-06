@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import {
 	About,
+	Contact,
 	Home,
 	MailSub,
 	Plans,
@@ -36,6 +37,7 @@ function App() {
 			<Plans />
 			<MailSub />
 			<Project />
+			<Contact />
 		</ThemeProvider>
 	);
 }
