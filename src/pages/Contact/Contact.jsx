@@ -6,8 +6,10 @@ import {
 	CForm,
 	CInput,
 	ContactCard,
+	ContactCardContainer,
 	ContactCardContent,
 	ContactContainer,
+	ContactImageCard,
 	ContactInfoContainer,
 	ContactInfoGroup,
 	ContactInfoIcon,
@@ -28,24 +30,29 @@ const Contact = () => {
 					spanFour='HTML Form'
 				/>
 				<ContactCardContent>
-					<ContactCard>
-						<CForm>
-							{ContactFormData.map((input, index) => (
-								<CInput
-									key={index}
-									type={input.type}
-									placeholder={input.placeholder}
-								/>
-							))}
-							<Button bg='#ff695f' color='#fff'>
-								Submit Request
-							</Button>
-						</CForm>
-					</ContactCard>
+					<ContactCardContainer>
+						<ContactImageCard></ContactImageCard>
+						<ContactCard>
+							<CForm>
+								{ContactFormData.map((input, index) => (
+									<CInput
+										key={index}
+										type={input.type}
+										placeholder={input.placeholder}
+									/>
+								))}
+								<Button bg='#ff695f' color='#fff'>
+									Submit Request
+								</Button>
+							</CForm>
+						</ContactCard>
+					</ContactCardContainer>
 					<ContactInfoContainer>
 						{ContactInfoData.map((data, index) => (
 							<ContactInfoGroup key={index}>
-								<ContactInfoIcon><IconSpan>{data.icon}</IconSpan></ContactInfoIcon>
+								<ContactInfoIcon>
+									<IconSpan>{data.icon}</IconSpan>
+								</ContactInfoIcon>
 								<ContactInfoItemGroup>
 									{data.details.map((det, index) => (
 										<ContactInfoItem key={index}>{det}</ContactInfoItem>
