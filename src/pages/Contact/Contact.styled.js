@@ -48,6 +48,11 @@ export const ContactImageCard = styled.div`
 	position: absolute;
 	top: 80px;
 	z-index: -1;
+	display: none;
+
+	@media (min-width:1024px){
+		display: flex;
+	}
 `;
 export const ContactCard = styled.div`
 	background-image: url(${ContactCardBg});

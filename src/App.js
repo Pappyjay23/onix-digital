@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import {
 	About,
 	Contact,
+	Footer,
 	Home,
 	MailSub,
 	Plans,
@@ -39,6 +40,7 @@ function App() {
 			<MailSub />
 			<Project />
 			<Contact />
+			<Footer />
 		</ThemeProvider>
 	);
 }

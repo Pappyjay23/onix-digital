@@ -6,5 +6,6 @@ import Plans from "./Plans/Plans";
 import MailSub from "./MailSub/MailSub";
 import Project from "./Projects/Project";
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 
-export { Home, Services, About, Portfolio, Plans, MailSub, Project, Contact };
+export { Home, Services, About, Portfolio, Plans, MailSub, Project, Contact, Footer };
