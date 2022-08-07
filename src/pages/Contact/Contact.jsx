@@ -17,11 +17,17 @@ import {
 	ContactInfoItemGroup,
 	ContactSection,
 	IconSpan,
+	LeftContactBg,
+	RightContactBg,
 } from "./Contact.styled";
+import LeftBgd from '../../assets/images/contact-left-dec.png'
+import RightBgd from '../../assets/images/contact-dec.png'
 
 const Contact = () => {
 	return (
 		<ContactSection>
+		<LeftContactBg src={LeftBgd} />
+		<RightContactBg src={RightBgd} />
 			<ContactContainer>
 				<SectionHeading
 					spanOne='Feel free to'

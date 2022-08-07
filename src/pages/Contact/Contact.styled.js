@@ -2,7 +2,9 @@ import styled from "styled-components";
 import ContactCardBg from "../../assets/images/contact-form-bg.png";
 import ImageCardBg from "../../assets/images/video-big-thumb-03.png";
 
-export const ContactSection = styled.div``;
+export const ContactSection = styled.div`
+	position: relative;
+`;
 export const ContactContainer = styled.div`
 	padding: 5rem 15px;
 	@media screen and (min-width: 768px) {
@@ -14,6 +16,18 @@ export const ContactContainer = styled.div`
 		max-width: 1200px;
 		margin: 0 auto;
 	}
+`;
+export const LeftContactBg = styled.img`
+	position: absolute;
+	top: 100px;
+	left: 0;
+	z-index: -5;
+	`;
+export const RightContactBg = styled.img`
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: -5;
 `;
 export const ContactCardContent = styled.div`
 	margin-top: 3rem;
