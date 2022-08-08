@@ -3,6 +3,7 @@ import {
 	BottomFooterText,
 	FCDesc,
 	FCLogo,
+	FCLogoLink,
 	FCSocial,
 	FCSocialGroup,
 	FooterCompanyInfo,
@@ -22,7 +23,7 @@ import {
 } from "./Footer.styled";
 import Logo from "../../assets/images/logo.png";
 import { FooterIconData, FooterLinkData } from "../../data/FooterData";
-import {FaPaperPlane} from 'react-icons/fa'
+import { FaPaperPlane } from "react-icons/fa";
 
 const Footer = () => {
 	return (
@@ -30,7 +31,9 @@ const Footer = () => {
 			<FooterContainer>
 				<FooterFlexGroup>
 					<FooterCompanyInfo>
-						<FCLogo src={Logo} />
+						<FCLogoLink href="#">
+							<FCLogo src={Logo} />
+						</FCLogoLink>
 						<FCDesc>info@onixdigital.com</FCDesc>
 						<FCSocialGroup>
 							{FooterIconData.map((icon, index) => (
@@ -56,16 +59,21 @@ const Footer = () => {
 
 					<FooterMailGroup>
 						<FooterLinkTitle>Subscribe Newsletters</FooterLinkTitle>
-						<FooterMailDesc>Get our latest news and ideas to your inbox</FooterMailDesc>
+						<FooterMailDesc>
+							Get our latest news and ideas to your inbox
+						</FooterMailDesc>
 						<FooterMailInputContainer>
-							<MailInput type='email' placeholder="Your Email" />
-							<MailButton><FaPaperPlane /></MailButton>
+							<MailInput type='email' placeholder='Your Email' />
+							<MailButton type='submit'>
+								<FaPaperPlane />
+							</MailButton>
 						</FooterMailInputContainer>
 					</FooterMailGroup>
 				</FooterFlexGroup>
 
-				<BottomFooterText>Copyright © 2021 Onix Digital Co., Ltd. All Rights Reserved. 
-            </BottomFooterText>
+				<BottomFooterText>
+					Copyright © 2021 Onix Digital Co., Ltd. All Rights Reserved.
+				</BottomFooterText>
 			</FooterContainer>
 		</FooterSection>
 	);

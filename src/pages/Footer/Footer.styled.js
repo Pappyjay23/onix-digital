@@ -20,9 +20,29 @@ export const FooterFlexGroup = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 3rem;
+
+	@media (min-width:768px){
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media (min-width:1024px){
+		flex-direction: row;
+		flex-wrap: nowrap;
+	}
 `;
 export const FooterCompanyInfo = styled.div`
 	margin-bottom: 3rem;
+	@media (min-width:768px){
+		margin-right: 3rem;
+	}
+	@media (min-width:1024px){
+		width: 210px;
+		margin-bottom: 0;
+	}
+`;
+export const FCLogoLink = styled.a`
+	cursor: pointer;
 `;
 export const FCLogo = styled.img`
 	width: 85px;
@@ -36,7 +56,7 @@ export const FCDesc = styled.p`
 export const FCSocialGroup = styled.div`
 	display: flex;
 `;
-export const FCSocial = styled.div`
+export const FCSocial = styled.a`
 	background-color: ${({ theme }) => theme.colors.blue};
 	margin-right: 1rem;
 	width: 36px;
@@ -45,6 +65,7 @@ export const FCSocial = styled.div`
 	justify-content: center;
 	align-items: center;
 	border-radius: 50%;
+	cursor: pointer;
 `;
 export const SocialIcon = styled.span`
 	color: ${({ theme }) => theme.colors.white};
@@ -54,6 +75,14 @@ export const FooterLinkGroup = styled.div`
 	margin-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 3rem;
+	@media (min-width:768px){
+		margin-right: 3rem;
+	}
+	@media (min-width:1024px){
+		margin-bottom: 0;
+		width: 210px;
+	}
 `;
 export const FooterLinkTitle = styled.p`
 	margin-bottom: 1.5rem;
@@ -106,6 +135,7 @@ export const MailButton = styled.button`
 	border: none;
 	color: ${({theme}) => theme.colors.white};
 	font-size: 1rem;
+	cursor: pointer;
 	
 `;
 

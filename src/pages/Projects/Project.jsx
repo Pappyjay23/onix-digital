@@ -46,6 +46,7 @@ const Project = () => {
 							</VideoCardCover>
 						))}
 					</VideoCardContainer>
+					
 					<ProjectIdCards>
 						{ProjectData.map((data, index) => (
 							<ProjectIdCard

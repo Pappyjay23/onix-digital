@@ -97,6 +97,7 @@ export const ProjectIdCard = styled.div`
 	border-radius: 20px;
 	position: relative;
 	margin-bottom: 1.5rem;
+	cursor: pointer;
 
 	@media (min-width: 350px) {
 		width: 300px;
