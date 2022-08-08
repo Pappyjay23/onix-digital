@@ -13,14 +13,13 @@ export const ServicesLeftBg = styled.img`
 export const ServicesRightBg = styled.img`
 	position: absolute;
 	right: 0;
-	bottom: 0;
+	bottom: -100px;
 	z-index: -1;
 `;
 export const ServicesCardContainer = styled.div`
 	display: flex;
 	width: 95%;
 	margin: 0 auto;
-	/* height: 320px; */
 	overflow-x: scroll;
 	&::-webkit-scrollbar{
 		display: none;
