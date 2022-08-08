@@ -13,7 +13,8 @@ import {
 	NavLink,
 	NavLinks,
 } from "./Navbar.styled";
-import { FaBars, FaTimes } from "react-icons/fa";
+import {HiOutlineMenuAlt3} from 'react-icons/hi'
+import {TiTimes} from 'react-icons/ti'
 import LogoImg from "../../assets/images/logo.png";
 import { NavLinksData } from "../../data/NavLinksData";
 import { Button } from "../Button/Button.styled";
@@ -41,9 +42,9 @@ const Navbar = () => {
 					</LogoLink>
 					<MenuBar
 						color='#2a2a2a'
-						size='1.5rem'
+						size='1.8rem'
 						onClick={() => setNavItems(true)}>
-						<FaBars />
+						<HiOutlineMenuAlt3 />
 					</MenuBar>
 					<MenuLinks>
 						{NavLinksData.map((data, index) => (
@@ -61,9 +62,9 @@ const Navbar = () => {
 				<BarContainer>
 					<MenuBar
 						color='#fff'
-						size='2rem'
+						size='2.5rem'
 						onClick={() => setNavItems(!navItems)}>
-						<FaTimes />
+						<TiTimes />
 					</MenuBar>
 				</BarContainer>
 				<NavLinks>

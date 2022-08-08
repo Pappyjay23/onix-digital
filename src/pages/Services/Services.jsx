@@ -13,7 +13,6 @@ import {
 } from "./Services.styled";
 import LeftBg from "../../assets/images/services-left-dec.png";
 import RightBg from "../../assets/images/services-right-dec.png";
-import { FaDatabase } from "react-icons/fa";
 import { ServiceCardData } from "../../data/ServiceCardData";
 import { SectionContainer } from "../../components/SectionContainer/SectionContainer.styled";
 
@@ -37,7 +36,7 @@ const Services = () => {
 						<ServicesCard key={index}>
 							<ServicesCardTitle>{data.title}</ServicesCardTitle>
 							<ServicesCardIcon>
-								<FaDatabase />
+								{data.icon}
 							</ServicesCardIcon>
 							<ServicesCardDesc>{data.desc}</ServicesCardDesc>
 						</ServicesCard>

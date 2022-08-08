@@ -69,6 +69,8 @@ export const FCSocial = styled.a`
 `;
 export const SocialIcon = styled.span`
 	color: ${({ theme }) => theme.colors.white};
+	display: flex;
+    align-items: center;
 `;
 
 export const FooterLinkGroup = styled.div`
