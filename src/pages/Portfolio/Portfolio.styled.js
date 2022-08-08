@@ -2,6 +2,12 @@ import styled from "styled-components";
 import SubCardBg from "../../assets/images/hover-bg.png";
 
 
+export const PortfolioBg = styled.img`
+	position: absolute;
+	top: 100px;
+	left: 100px;
+`
+
 export const PortfolioCardContainer = styled.div`
 	display: flex;
 	width: 95%;

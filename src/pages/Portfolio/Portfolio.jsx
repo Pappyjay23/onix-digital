@@ -1,6 +1,7 @@
 import React from "react";
 import {
 	CardContainer,
+	PortfolioBg,
 	PortfolioCard,
 	PortfolioCardContainer,
 	PortfolioSubCard,
@@ -11,10 +12,12 @@ import {
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import { PortfolioData } from "../../data/PortfolioData";
 import { SectionContainer } from "../../components/SectionContainer/SectionContainer.styled";
+import PortfolioBgd from "../../assets/images/portfolio-left-dec.png";
 
 const Portfolio = () => {
 	return (
 		<SectionContainer id='portfolio'>
+			<PortfolioBg src={PortfolioBgd} />
 			<SectionHeading
 				spanOne='Our Recent'
 				spanTwo='Projects'
