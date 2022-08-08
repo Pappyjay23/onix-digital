@@ -33,7 +33,7 @@ const Project = () => {
 					<VideoCardContainer>
 						{ProjectData.map((vid, index) => (
 							<VideoCardCover
-								active={current == index ? true : false}
+								active={current === index ? true : false}
 								key={index}>
 								{current === index && (
 									<VideoCard cardImg={vid.image}>
@@ -55,7 +55,7 @@ const Project = () => {
 								<ProjectIdTag>
 									<IdTagTitle>{data.title}</IdTagTitle>
 								</ProjectIdTag>
-								<ProjectIdOverlay active={current == index ? true : false}>
+								<ProjectIdOverlay active={current === index ? true : false}>
 									<VidTitle>{data.title}</VidTitle>
 									<VidDesc>{data.desc}</VidDesc>
 								</ProjectIdOverlay>
