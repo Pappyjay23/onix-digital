@@ -7,7 +7,6 @@ import {
 	AboutCardDesc,
 	AboutCardIcon,
 	AboutCardTitle,
-	AboutContainer,
 	AboutContentContainer,
 	AboutFlexContainer,
 	AboutImage,
@@ -16,10 +15,11 @@ import {
 } from "./About.styled";
 import AboutImg from "../../assets/images/about-left-image.png";
 import { AboutData } from "../../data/AboutData";
+import { SectionContainer } from "../../components/SectionContainer/SectionContainer.styled";
 
 const About = () => {
 	return (
-		<AboutContainer id="about">
+		<SectionContainer id="about">
 			<AboutFlexContainer>
 				<AboutImageContainer>
 					<AboutImage src={AboutImg} />
@@ -45,7 +45,7 @@ const About = () => {
 					</AboutCardContainer>
 				</AboutContentContainer>
 			</AboutFlexContainer>
-		</AboutContainer>
+		</SectionContainer>
 	);
 };
 

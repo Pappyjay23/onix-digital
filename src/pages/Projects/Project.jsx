@@ -3,7 +3,6 @@ import { ProjectData } from "../../data/ProjectsData";
 import {
 	IdTagTitle,
 	LeftBg,
-	ProjectContainer,
 	ProjectIdCard,
 	ProjectIdCards,
 	ProjectIdOverlay,
@@ -20,6 +19,7 @@ import {
 } from "./Project.styled";
 import LeftBgd from "../../assets/images/videos-left-dec.png";
 import RightBgd from "../../assets/images/videos-right-dec.png";
+import { SectionContainer } from "../../components/SectionContainer/SectionContainer.styled";
 
 const Project = () => {
 	const [current, setCurrent] = useState(0);
@@ -28,7 +28,7 @@ const Project = () => {
 		<ProjectSection id='videos'>
 			<LeftBg src={LeftBgd} />
 			<RightBg src={RightBgd} />
-			<ProjectContainer>
+			<SectionContainer>
 				<ProjectVideosCover>
 					<VideoCardContainer>
 						{ProjectData.map((vid, index) => (
@@ -63,7 +63,7 @@ const Project = () => {
 						))}
 					</ProjectIdCards>
 				</ProjectVideosCover>
-			</ProjectContainer>
+			</SectionContainer>
 		</ProjectSection>
 	);
 };

@@ -8,7 +8,6 @@ import {
 	PlansCard,
 	PlansCardContainer,
 	PlansContainer,
-	PlansContent,
 	PlansImageOne,
 	PlansImageTwo,
 	PlansTitle,
@@ -18,13 +17,14 @@ import ImageOne from "../../assets/images/tables-left-dec.png";
 import ImageTwo from "../../assets/images/tables-right-dec.png";
 import { Button } from "../../components/Button/Button.styled";
 import { PlansCardData } from "../../data/PlansCardData";
+import { SectionContainer } from "../../components/SectionContainer/SectionContainer.styled";
 
 const Plans = () => {
 	return (
 		<PlansContainer>
 			<PlansImageOne src={ImageOne} />
 			<PlansImageTwo src={ImageTwo} />
-			<PlansContent>
+			<SectionContainer>
 				<SectionHeading
 					spanOne='Select a suitable'
 					spanTwo='Plan'
@@ -51,7 +51,7 @@ const Plans = () => {
 						</PlansCard>
 					))}
 				</PlansCardContainer>
-			</PlansContent>
+			</SectionContainer>
 		</PlansContainer>
 	);
 };

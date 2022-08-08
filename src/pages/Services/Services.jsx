@@ -8,7 +8,6 @@ import {
 	ServicesCardDesc,
 	ServicesCardIcon,
 	ServicesCardTitle,
-	ServicesContainer,
 	ServicesLeftBg,
 	ServicesRightBg,
 } from "./Services.styled";
@@ -16,10 +15,11 @@ import LeftBg from "../../assets/images/services-left-dec.png";
 import RightBg from "../../assets/images/services-right-dec.png";
 import { FaDatabase } from "react-icons/fa";
 import { ServiceCardData } from "../../data/ServiceCardData";
+import { SectionContainer } from "../../components/SectionContainer/SectionContainer.styled";
 
 const Services = () => {
 	return (
-		<ServicesContainer id='services'>
+		<SectionContainer id='services'>
 			<ServicesLeftBg src={LeftBg} />
 			<ServicesRightBg src={RightBg} />
 			<HeadingContainer>
@@ -44,7 +44,7 @@ const Services = () => {
 					))}
 				</CardContainer>
 			</ServicesCardContainer>
-		</ServicesContainer>
+		</SectionContainer>
 	);
 };
 

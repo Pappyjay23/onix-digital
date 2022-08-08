@@ -1,12 +1,13 @@
 import React from "react";
-import { FooterContainer, FooterSection } from "./Footer.styled";
+import { SectionContainer } from "../../components/SectionContainer/SectionContainer.styled";
+import { FooterSection } from "./Footer.styled";
 
 const Footer = () => {
 	return (
 		<FooterSection>
-			<FooterContainer>
+			<SectionContainer>
 				<div>Footer</div>
-			</FooterContainer>
+			</SectionContainer>
 		</FooterSection>
 	);
 };

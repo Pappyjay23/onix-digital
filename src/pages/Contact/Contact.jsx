@@ -8,7 +8,6 @@ import {
 	ContactCard,
 	ContactCardContainer,
 	ContactCardContent,
-	ContactContainer,
 	ContactImageCard,
 	ContactInfoContainer,
 	ContactInfoGroup,
@@ -20,15 +19,16 @@ import {
 	LeftContactBg,
 	RightContactBg,
 } from "./Contact.styled";
-import LeftBgd from '../../assets/images/contact-left-dec.png'
-import RightBgd from '../../assets/images/contact-dec.png'
+import LeftBgd from "../../assets/images/contact-left-dec.png";
+import RightBgd from "../../assets/images/contact-dec.png";
+import { SectionContainer } from "../../components/SectionContainer/SectionContainer.styled";
 
 const Contact = () => {
 	return (
-		<ContactSection>
-		<LeftContactBg src={LeftBgd} />
-		<RightContactBg src={RightBgd} />
-			<ContactContainer>
+		<ContactSection id='contact'>
+			<LeftContactBg src={LeftBgd} />
+			<RightContactBg src={RightBgd} />
+			<SectionContainer>
 				<SectionHeading
 					spanOne='Feel free to'
 					spanTwo=' Contact'
@@ -68,7 +68,7 @@ const Contact = () => {
 						))}
 					</ContactInfoContainer>
 				</ContactCardContent>
-			</ContactContainer>
+			</SectionContainer>
 		</ContactSection>
 	);
 };

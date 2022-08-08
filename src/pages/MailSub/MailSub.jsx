@@ -8,16 +8,16 @@ import {
 	EmailInput,
 	MailBgd,
 	MailCardContainer,
-	MailContainer,
 	MailTitle,
 	WebContainer,
 	WebInput,
 } from "./Mail.styled";
 import MailBgTwo from '../../assets/images/subscribe-dec.png'
+import { SectionContainer } from "../../components/SectionContainer/SectionContainer.styled";
 
 const MailSub = () => {
 	return (
-		<MailContainer>
+		<SectionContainer>
 			<MailCardContainer>
                 <MailBgd src={MailBgTwo} />
 				<MailTitle>Know Your Website SEO Score by Email</MailTitle>
@@ -42,7 +42,7 @@ const MailSub = () => {
 					</Button>
 				</CardRoundedContainer>
 			</MailCardContainer>
-		</MailContainer>
+		</SectionContainer>
 	);
 };
 

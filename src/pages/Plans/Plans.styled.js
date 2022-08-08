@@ -6,18 +6,6 @@ export const PlansContainer = styled.div`
     overflow: hidden;
 `;
 
-export const PlansContent = styled.div`
-	padding: 3rem 15px;
-	@media screen and (min-width: 768px) {
-		padding: 1.5rem 30px;
-	}
-
-	@media screen and (min-width: 1024px) {
-		padding: 1.5rem 50px;
-		max-width: 1200px;
-		margin: 0 auto;
-	}
-`;
 
 export const PlansImageOne = styled.img`
 	position: absolute;

@@ -1,19 +1,5 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
-	padding: 3rem 15px;
-	position: relative;
-	@media screen and (min-width: 768px) {
-		padding: 1.5rem 30px;
-	}
-
-	@media screen and (min-width: 1024px) {
-		padding: 1.5rem 50px;
-		max-width: 1200px;
-		margin: 0 auto;
-	}
-`;
-
 export const AboutFlexContainer = styled.div`
 	@media screen and (min-width: 1024px) {
         display: flex;   

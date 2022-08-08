@@ -3,7 +3,6 @@ import {
 	CardContainer,
 	PortfolioCard,
 	PortfolioCardContainer,
-	PortfolioContainer,
 	PortfolioSubCard,
 	PSubCardContent,
 	PSubCardDesc,
@@ -11,10 +10,11 @@ import {
 } from "./Portfolio.styled";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import { PortfolioData } from "../../data/PortfolioData";
+import { SectionContainer } from "../../components/SectionContainer/SectionContainer.styled";
 
 const Portfolio = () => {
 	return (
-		<PortfolioContainer id='portfolio'>
+		<SectionContainer id='portfolio'>
 			<SectionHeading
 				spanOne='Our Recent'
 				spanTwo='Projects'
@@ -36,7 +36,7 @@ const Portfolio = () => {
 					))}
 				</CardContainer>
 			</PortfolioCardContainer>
-		</PortfolioContainer>
+		</SectionContainer>
 	);
 };
 
