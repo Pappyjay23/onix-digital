@@ -42,7 +42,6 @@ export const ServicesCard = styled.div`
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-
 	:last-child{
 		margin-right: 0;
 	}
