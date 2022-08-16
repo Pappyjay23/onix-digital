@@ -18,21 +18,36 @@ export const ServicesRightBg = styled.img`
 `;
 export const ServicesCardContainer = styled.div`
 	display: flex;
-	width: 95%;
-	margin: 0 auto;
-	overflow-x: scroll;
-	&::-webkit-scrollbar{
-		display: none;
-	}
+	width: var(--marque-width);
+	height: 320px;
+	margin: auto;
+	overflow-x: hidden;
 `;
 export const CardContainer = styled.div`
 	display: flex;
-`
+	animation: marquee var(--marque-animation-duration) linear infinite;
+
+	:hover {
+		animation-play-state: paused;
+	}
+
+	@keyframes marquee {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(
+				calc(-1 * var(--marque-element-width) * var(--marque-elements))
+			);
+		}
+	}
+`;
 export const ServicesCard = styled.div`
 	background-color: ${({ theme }) => theme.colors.lightGrey};
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-	border: 1px solid ${({theme}) => theme.colors.orange};
-	width: 270px;
+	border: 1px solid ${({ theme }) => theme.colors.orange};
+	width: var(--marque-element-width);
+	flex-shrink: 0;
 	height: 300px;
 	margin-right: 2rem;
 	padding: 2rem;
@@ -42,20 +57,11 @@ export const ServicesCard = styled.div`
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	:last-child{
+	:last-child {
 		margin-right: 0;
 	}
-	@media screen and (min-width: 375px) {
-		width: 320px;
-	}
-	@media screen and (min-width: 425px) {
-		width: 370px;
-	}
-	@media screen and (min-width: 768px) {
-		width: 320px;
-	}
-	@media screen and (min-width: 1024px) {
-		width: 270px;
+	:hover {
+		cursor: pointer;
 	}
 `;
 export const ServicesCardTitle = styled.p`

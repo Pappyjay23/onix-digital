@@ -57,4 +57,24 @@ export const ServiceCardData = [
 		desc: "Get to know more about the topics in details",
         icon: <FaPeopleArrows />,
 	},
+	{
+		title: "Optimizing your websites for speed",
+		desc: "Get to know more about the topics in details",
+		icon: <IoMdRocket />,
+	},
+	{
+		title: "See the Strategy in the market",
+		desc: "Get to know more about the topics in details",
+        icon: <FaRegChartBar />,
+	},
+	{
+        title: "Best content ideas for your pages",
+		desc: "Feel free to use this for your business",
+        icon: <FaRegLightbulb />,
+	},
+	{
+        title: "Accessibility for mobile viewing",
+		desc: "Get to know more about the topics in details",
+        icon: <ImMobile />,
+	},
 ];
