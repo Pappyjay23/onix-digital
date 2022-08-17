@@ -12,9 +12,11 @@ export const GlobalStyle = createGlobalStyle`
     :root{
         --marque-width: 90vw;
         --marque-elements: 10;
+        --marque2-elements: 12;
         --marque-elements-displayed: 1;
         --marque-element-width: calc(var(--marque-width)/var(--marque-elements-displayed));
-        --marque-animation-duration: calc(var(--marque-elements) * 3s)
+        --marque-animation-duration: calc(var(--marque-elements) * 3s);
+        --marque2-animation-duration: calc(var(--marque2-elements) * 3s);
     }
 
     @media (min-width:425px){

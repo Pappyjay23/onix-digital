@@ -64,4 +64,25 @@ export const PortfolioData = [
 		title: "Project Twelve",
 		desc: "Web Optimization",
 	},
+	// -----Duplicate for animation
+	{
+		image: ImageOne,
+		title: "Project One",
+		desc: "SEO & Marketing",
+	},
+	{
+		image: ImageTwo,
+		title: "Project Two",
+		desc: "Ui/Ux Design & Dev",
+	},
+	{
+		image: ImageThree,
+		title: "Project Three",
+		desc: "Digital Marketing",
+	},
+	{
+		image: ImageFour,
+		title: "Project Four",
+		desc: "Content Creation",
+	},
 ];

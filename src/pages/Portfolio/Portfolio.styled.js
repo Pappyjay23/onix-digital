@@ -10,22 +10,37 @@ export const PortfolioBg = styled.img`
 
 export const PortfolioCardContainer = styled.div`
 	display: flex;
-	width: 95%;
-	margin: 4rem auto 0 auto;
-	overflow-x: scroll;
-	&::-webkit-scrollbar {
-		display: none;
-	}
+	width: var(--marque-width);
+	height: 370px;
+	margin: auto;
+	overflow-x: hidden;
 `;
 export const CardContainer = styled.div`
 	display: flex;
+	animation: marquee var(--marque2-animation-duration) linear infinite;
+
+	:hover {
+		animation-play-state: paused;
+	}
+
+	@keyframes marquee {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(
+				calc(-1 * var(--marque-element-width) * var(--marque2-elements))
+			);
+		}
+	}
 `;
 export const PortfolioCard = styled.div`
 	background-image: url(${({ image }) => image});
 	background-position: center;
 	background-size: cover;
 	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-	width: 270px;
+	width: var(--marque-element-width);
+	flex-shrink: 0;
 	height: 350px;
 	margin-right: 2rem;
 	padding: 2rem;
@@ -36,7 +51,7 @@ export const PortfolioCard = styled.div`
 	:last-child {
 		margin-right: 0;
 	}
-	@media screen and (min-width: 375px) {
+	/* @media screen and (min-width: 375px) {
 		width: 320px;
 		height: 440px;
 	}
@@ -50,7 +65,7 @@ export const PortfolioCard = styled.div`
 	@media screen and (min-width: 1024px) {
 		width: 270px;
 		height: 350px;
-	}
+	} */
 `;
 
 export const PortfolioSubCard = styled.div`

@@ -57,6 +57,7 @@ export const ServiceCardData = [
 		desc: "Get to know more about the topics in details",
         icon: <FaPeopleArrows />,
 	},
+	// -----Duplicate for animation
 	{
 		title: "Optimizing your websites for speed",
 		desc: "Get to know more about the topics in details",
