@@ -35,9 +35,7 @@ const Services = () => {
 					{ServiceCardData.map((data, index) => (
 						<ServicesCard key={index}>
 							<ServicesCardTitle>{data.title}</ServicesCardTitle>
-							<ServicesCardIcon>
-								{data.icon}
-							</ServicesCardIcon>
+							<ServicesCardIcon>{data.icon}</ServicesCardIcon>
 							<ServicesCardDesc>{data.desc}</ServicesCardDesc>
 						</ServicesCard>
 					))}

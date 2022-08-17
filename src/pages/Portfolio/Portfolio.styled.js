@@ -51,21 +51,6 @@ export const PortfolioCard = styled.div`
 	:last-child {
 		margin-right: 0;
 	}
-	/* @media screen and (min-width: 375px) {
-		width: 320px;
-		height: 440px;
-	}
-	@media screen and (min-width: 425px) {
-		width: 370px;
-		height: 490px;
-	}
-	@media screen and (min-width: 768px) {
-		width: 320px;
-	}
-	@media screen and (min-width: 1024px) {
-		width: 270px;
-		height: 350px;
-	} */
 `;
 
 export const PortfolioSubCard = styled.div`
